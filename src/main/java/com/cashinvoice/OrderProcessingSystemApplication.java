@@ -1,4 +1,4 @@
-package com.cashinvoice.order_processing_system;
+package com.cashinvoice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
