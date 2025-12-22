@@ -62,7 +62,7 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErrorResponse> handleGenericException(Exception ex) {
 
         ErrorResponse errorResponse =
-                new ErrorResponse("An unexpected error occurred");
+                new ErrorResponse("An unexpected error occurred .");
 
         return ResponseEntity
                 .status(HttpStatus.INTERNAL_SERVER_ERROR)
