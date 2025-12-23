@@ -3,3 +3,11 @@
   "customerId": "CUST1001",
   "amount": 5000
 }
+//
+Map <Integer , String> data = new HashMap<>();
+  data.put(1,"Apple");
+  data.put(2,"Ayushman");
+
+for (Map.Entry<Integer , String> entry : data.entrySet()){
+System.out.println("Key" +entry.getKey() + "Value"
+}

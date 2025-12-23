@@ -51,6 +51,8 @@ public class OrderController {
         return ResponseEntity.ok(orders);
     }
 
+
+
     @GetMapping("/all")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<List<Order>> getAllOrders() {
@@ -60,4 +62,9 @@ public class OrderController {
 
         return ResponseEntity.ok(orders);
     }
-}
+    @PutMapping("/{id}")
+        public  ResponseEntity<Order> updateOrder(
+                @PathVariable Long id ,
+                @RequestBody Order order) {
+            return ResponseEntity.ok(orderService.updateOrder(id, order));
+        }
